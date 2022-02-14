@@ -1,14 +1,109 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: orange;
-  }
+header {
+    display: block;
+}
 
-.flex-container > div {
-    background-color: grey;
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.header-section {
+    position: absolute;
+    padding: 0px;
+    z-index: 100px;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.header-section .nav {
+    min-height: 70px;
+    padding: 30 60 30 60;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,.2);
+}
+
+.header-section .nav .site-logo {
+    color: #000000;
     font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    float: left;
+    transform: translateY(50%);
+}
+
+.header-section .nav .right-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    float: right;
+    transform: translateY(30%);
+}
+
+.header-section .nav li {
+    letter-spacing: 1px;
+}
+
+.header-section .nav li:hover a {
+    color: #aa83f3;
+}
+
+.home-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.home-section .entry-text-left {
+    padding: 30 60 30 60;
+    align-self: center;
+    width: 80%;
+    display: inline-block;
+}
+
+.home-section .entry-text-left h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.home-section .entry-text-left p {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.learn-button {
+    background-color: white;
+    border: 3px solid #aa83f3;
+    border-radius: 7px;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.learn-button:hover{
+    background-color: #aa83f3;
+    border: 3px solid #aa83f3;
+    border-radius: 7px;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
