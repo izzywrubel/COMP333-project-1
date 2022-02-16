@@ -24,6 +24,16 @@ body {
   margin: 0px;
 }
 
+.home.header-section {
+    position: relative !important;
+    padding: 0px;
+    z-index: 1;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 .header-section {
     position: fixed;
     padding: 0px;
@@ -73,8 +83,8 @@ body {
 
 .home-section {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%;
+    transform: translateY(-50%); */
     text-align: left;
 }
 
