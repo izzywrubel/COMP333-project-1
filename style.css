@@ -82,6 +82,7 @@ body {
 }
 
 .home-section {
+    padding-top: 1vw;
     position: relative;
     /* top: 50%;
     transform: translateY(-50%); */
