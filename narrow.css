@@ -1,4 +1,4 @@
-/* General CSS Styling Sheet for Most Desktop Dimensions */
+/* CSS Styling Sheet for Narrow Views and Mobile */
 
 html {
     scroll-behavior: smooth;
@@ -25,7 +25,7 @@ body {
 }
 
 .header-section {
-    position: fixed;
+    position: relative;
     padding: 0px;
     z-index: 1;
     height: 150px;
@@ -52,11 +52,7 @@ body {
 }
 
 .header-section .nav .right-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-    float: right;
-    transform: translateY(30%);
+    display: none;
 }
 
 .header-section .nav li {
@@ -73,8 +69,6 @@ body {
 
 .home-section {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: left;
 }
 
@@ -138,7 +132,6 @@ body {
 
 .about-section {
     position: relative;
-    top: 30%;
     text-align: left;
 }
 
@@ -184,11 +177,10 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    flex-direction:column;
 }
 
 .step-col {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
 }
 
 .steps {
@@ -219,16 +211,6 @@ h3 {
     display: block;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
 .explain {
     width: 70%;
     margin: auto;
@@ -243,39 +225,115 @@ h3 {
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #610CE9;
-    height: auto;
-    width: 100%;
-    color: #fff;
-}
-
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content h3 {
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.hamburger {
-    display: none;
-}
-
-.p-menu1 {
     display:none;
 }
 
-@media only screen and (max-width: 1300px) {
-    .image {
-        display: none;
-    }
+.image {
+    display:none;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    transform: translateY(50%);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* Hamburger */
+.hamburger1 {
+    float: right;
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+}
+
+.hamburger1 div {
+    background-color: #000000;
+    position: right;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+    height: 225px;
+}
+
+/* Menu */
+.menu1 {
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.menu1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu1 a:first-child {
+    margin-top: 40px;
+}
+
+.menu1 a:last-child {
+    margin-bottom: 40px;
+}
+
+.link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Roboto', sans-serif;
 }

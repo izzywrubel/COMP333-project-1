@@ -7,54 +7,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Jamjudge - The Best Music Rating Platform</title>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- CSS Files Linked Depending on Screen Width -->
+    <link rel="stylesheet" media='screen and (min-width: 1000px)' href="style.css">
+    <link rel='stylesheet' media='screen and (max-width: 1000px)' href='narrow.css'/>
 
 </head>
 
 <body>
+    <!-- BEGIN Header Section -->
     <header class="header-section sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="nav">
-                        <a href="index.html" class="site-logo">Jamjudge</a>
-                        <ul class="right-nav" id="referenceNav">
-                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="about.html">About</a></li>
-                            <li class="scroll-to-section"><a href="pricing.html">Pricing</a></li>
-                        </ul>
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
+        <nav class="nav">
+            <a href="index.html" class="site-logo">Jamjudge</a>
+            <ul class="right-nav" id="referenceNav">
+                <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="about.html">About</a></li>
+                <li class="scroll-to-section"><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <!-- BEGIN Hamburger Navigation -->
+            <section class="p-menu1">
+              <nav id="navbar" class="n" role="n1">
+                <input id="toggle1" type="checkbox" />
+                <label class="hamburger1" for="toggle1">
+                  <div class="top"></div>
+                  <div class="meat"></div>
+                  <div class="bottom"></div>
+                </label>
+                    <nav class="menu1">
+                      <a class="link1" href="index.html">Home</a>
+                      <a class="link1" href="about.html">About</a>
+                      <a class="link1" href="pricing.html">Pricing</a>
                     </nav>
-                </div>
-            </div>
-        </div>
+                </nav>
+            </section>
+            <!-- END Hamburger Navigation -->
+        </nav>
     </header>
-    <div class="filler" id="filler-anchor"></div>
+    <!-- END Header Section -->
+
+    <!-- BEGIN Home Section -->
     <div class="home-section" id="home">
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="entry-text-left">
-                        <h1>Rate your music and others with Jamjudge!</h1>
-                        <p>Jamjudge is today's best platform for rating your and all your friends' music taste.</p>
-                        <a href="about.html" class="learn-button">Learn More</a>
-                    </div>
-                    <div class="image">
-                        <img src="undraw_music_re_a2jk.svg" height="300px">
-                    </div>
-                </div>
-            </div>
+        <div class="entry-text-left">
+            <h1>Rate your music and others with Jamjudge!</h1>
+            <p>Jamjudge is today's best platform for rating your and all your friends' music taste.</p>
+            <a href="about.html" class="learn-button">Learn More About Music Ratings</a>
+        </div>
+        <div class="image">
+            <img src="undraw_music_re_a2jk.svg" alt="girl listening to music" height="300px">
         </div>
     </div>
-
-    <section class="section" id="pricing">
-    <section class="section" id="contact">
-
-
+    <!-- END Home Section -->
 </body>
+
+<!-- BEGIN Footer Section -->
+<footer>
+    <div class="footer-content">
+        <h3>Made with care by Isabel Wrubel for COMP333 <br>
+         <span>&copy</span>Jamjudge 2022</h3>
+    </div>
+</footer>
+<!-- END Footer Section -->
 </html>

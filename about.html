@@ -7,83 +7,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Jamjudge - The Best Music Rating Platform</title>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- CSS Files Linked Depending on Screen Width -->
+    <link rel="stylesheet" media='screen and (min-width: 1000px)' href="style.css">
+    <link rel='stylesheet' media='screen and (max-width: 1000px)' href='narrow.css'/>
 
 </head>
 
 <body>
+    <!-- BEGIN Header Section -->
     <header class="header-section sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="nav">
-                        <a href="index.html" class="site-logo">Jamjudge</a>
-                        <ul class="right-nav" id="referenceNav">
-                            <li class="scroll-to-section"><a href="index.html">Home</a></li>
-                            <li class="scroll-to-section"><a href="about.html" class="active">About</a></li>
-                            <li class="scroll-to-section"><a href="pricing.html">Pricing</a></li>
-                        </ul>
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
+        <nav class="nav">
+            <a href="index.html" class="site-logo">Jamjudge</a>
+            <ul class="right-nav" id="referenceNav">
+                <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                <li class="scroll-to-section"><a href="about.html" class="active">About</a></li>
+                <li class="scroll-to-section"><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <!-- BEGIN Hamburger Navigation -->
+            <section class="p-menu1">
+              <nav id="navbar" class="n" role="n1">
+                <input id="toggle1" type="checkbox" />
+                <label class="hamburger1" for="toggle1">
+                  <div class="top"></div>
+                  <div class="meat"></div>
+                  <div class="bottom"></div>
+                </label>
+                    <nav class="menu1">
+                      <a class="link1" href="index.html">Home</a>
+                      <a class="link1" href="about.html">About</a>
+                      <a class="link1" href="pricing.html">Pricing</a>
                     </nav>
-                </div>
-            </div>
-        </div>
+                </nav>
+            </section>
+            <!-- END Hamburger Navigation -->
+        </nav>
     </header>
-    <div class="filler" id="filler-anchor"></div>
+    <!-- END Header Section -->
+
+    <!-- BEGIN About Section -->
     <div class="about-section" id="home">
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="entry-text-center">
-                        <h1>Get started with Jamjudge today!</h1>
-                        <p>Jamjudge was made by entrepreneur and student Isabel Wrubel at Wesleyan University. It's simple, easy to use, and helps you fine-tune and cultivate your own music taste.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="entry-text-center">
+            <h1>Get started with Jamjudge today!</h1>
+            <p>Jamjudge was made by entrepreneur and student Isabel Wrubel at Wesleyan University. It's simple, easy to use, and helps you fine-tune and cultivate your own music taste.</p>
         </div>
-    </div>
-    <div class="arrow-container">
-        <i class="arrow down"></i>
-    </div>
     <div class="entry-text-center">
         <h1>In Only 3 Simple Steps... </h1>
     </div>
-    <div class="step-row">
-        <div class="step-col">
-            <div class="steps">
-                <span class="number">01</span>
-                <h2>Sign Up<h2>
-                <h3>Make a Jamjudge account and link it to your music streaming platform.<h3>
+        <!-- BEGIN Responsive Flex Cards -->
+        <div class="step-row">
+            <div class="step-col">
+                <div class="steps">
+                    <span class="number">01</span>
+                    <h2>Sign Up<h2>
+                    <h3>Make a Jamjudge account and link it to your music streaming platform.<h3>
+                </div>
             </div>
-        </div>
-        <div class="step-col">
-            <div class="steps">
-                <span class="number">01</span>
-                <h2>Add Your Friends<h2>
-                <h3>Add your friends to see what songs they've rated.<h3>
+            <div class="step-col">
+                <div class="steps">
+                    <span class="number">01</span>
+                    <h2>Add Your Friends<h2>
+                    <h3>Add your friends to see what songs they've rated.<h3>
+                </div>
             </div>
-        </div>
-        <div class="step-col">
-            <div class="steps">
-                <span class="number">03</span>
-                <h2>Rate and Share<h2>
-                <h3>Start rating and share your results with the Jamjudge community.<h3>
+            <div class="step-col">
+                <div class="steps">
+                    <span class="number">03</span>
+                    <h2>Rate and Share<h2>
+                    <h3>Start rating and share your results with the Jamjudge community.<h3>
+                </div>
             </div>
+        </div> <br> <br> <br>
+        <!-- END Responsive Flex Cards -->
+        <div class="explain">
+            <div class="entry-text-center">
+                <h1>Automatically Generated Playlists</h1>
+                <p>With our AI software, Jamjudge will automatically create a playlist of your most well-rated songs. That way, you'll never have to have a moment without bad music.</p>
+            </div>
+            <br><br>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXcFL3NVRO9gaj?utm_source=generator" width="100%" height="600px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <br> <br> <br>
         </div>
-    </div> <br> <br> <br>
-    <div class="explain">
-        <div class="entry-text-center">
-            <h1>Automatically Generated Playlists</h1>
-            <p>With our AI software, Jamjudge will automatically create a playlist of your most well-rated songs. That way, you'll never have to have a moment without bad music.</p>
-        </div>
-        <br><br>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXcFL3NVRO9gaj?utm_source=generator" width="100%" height="600px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
-    <div class = "filler"> </div>
+    <!-- END About Section -->
 </body>
 </html>
